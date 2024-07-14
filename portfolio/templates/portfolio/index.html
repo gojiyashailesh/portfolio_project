@@ -1,0 +1,118 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-16">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gojiya Shailesh Portfolio</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/mediaqueries.css' %}">
+  <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon" scale>
+</head>
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Gojiya Shailesh</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="{% static 'images/pp.png' %}" alt="Gojiya Shailesh profile picture">
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Gojiya Shailesh</h1>
+      <p class="section__text__p2">AI ML Student</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('{% static 'assets/resume-example.pdf' %}')">Download CV</button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+      </div>
+      <div id="socials-container">
+        <img src="{% static 'images/linkedin.png' %}" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/gojiyashailesh/'">
+        <img src="{% static 'images/1.png' %}" alt="My Github profile" class="icon" onclick="location.href='https://github.com/gojiyashailesh'">
+        <img src="{% static 'images/4.png' %}" alt="My Instagram profile" class="icon" onclick="location.href='https://www.instagram.com/mr.shailesh.ahir/'">
+        <img src="{% static 'images/3.png' %}" alt="My Reddit profile" class="icon" onclick="location.href='https://www.reddit.com/user/mr_shailesh_ahir/'">
+        <img src="{% static 'images/2.png' %}" alt="My Twitter profile" class="icon" onclick="location.href='https://twitter.com/gojiyashaileshX'">
+        <img src="{% static 'images/quora.png' %}" alt="My Quora profile" class="icon" onclick="location.href='https://www.quora.com/profile/Gojiya-Shailesh-2'">
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <!-- You can add images or icons related to about section here -->
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="{% static 'images/experience.png' %}" alt="Experience icon" class="icon">
+            <h3>Education</h3>
+            <p>Persuing<br>Master of Computer Application</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            Hey there! I'm Gojiya Shailesh, diving into the AI and Machine Learning universe as a Computer Science Master's student at Gujarat University. I'm all about tech vibes, exploring the latest in AI, cryptography, and cloud tech.
+  
+            From hardware basics to IoT wizardry and being a beta tester for cool AI tools, I've got my hands in many tech jars. Testing AI tools is my jam—I love diving deep into their functionalities and quirks.
+  
+            In a nutshell, I'm a tech enthusiast surfing the waves of innovation, eager to make my mark in the ever-evolving world of technology.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="{% static 'images/email.png' %}" alt="Email icon" class="icon contact-icon email-icon">
+        <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="{% static 'images/linkedin.png' %}" alt="LinkedIn icon" class="icon contact-icon">
+        <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2023 Gojiya Shailesh. All Rights Reserved.</p>
+  </footer>
+  <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
